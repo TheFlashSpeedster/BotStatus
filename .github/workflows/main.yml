@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: theflashspeedster/botstatus@main
-        env: # all the six environment variables are must, else the action will raise errors.
-          GITHUB_TOKEN: your_github_token # automatically fetched. none of business.
-          BOTS: bots_json_url # link of raw file of bots in JSON format. (eg :~ https://gist.githubusercontent.com/jainamoswal/cc331a3d2a4169ab76885c5a1e076d68/raw#file-bots-json)
-          SESSION: telethon_session_string # telethon session string
-          APP_ID: api_id # APP ID from my.telegram.org
-          API_HASH: api_hash # API ID from my.telegram.org
-          IDS: -100ChannelID:MessageID # Message IDs to edit.
+        env: # all variables are mandatory.
+          GITHUB_TOKEN: 
+          BOTS: 
+          SESSION: 
+          APP_ID: 
+          API_HASH: 
+          IDS: 
         id: bot-status
 
       # now you can use the output of status returned as JSON anywhere. 

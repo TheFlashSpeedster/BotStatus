@@ -8,7 +8,7 @@ jobs:
     name: 🏃‍♂️ run the bot 🏃‍♂️
     runs-on: ubuntu-latest
     steps:
-      - uses: flash-dev1937/botstatus@main
+      - uses: theflashspeedster/botstatus@main
         env: # all the six environment variables are must, else the action will raise errors.
           GITHUB_TOKEN: your_github_token # automatically fetched. none of business.
           BOTS: bots_json_url # link of raw file of bots in JSON format. (eg :~ https://gist.githubusercontent.com/jainamoswal/cc331a3d2a4169ab76885c5a1e076d68/raw#file-bots-json)
